@@ -1,0 +1,38 @@
+﻿ 
+ hmset 10000 username admin password 1D0258C2440A8D19E716292B231E3190
+ hmset 10001 username testuser1 password E10ADC3949BA59ABBE56E057F20F883E
+ hmset 10002 username testuser2 password E10ADC3949BA59ABBE56E057F20F883E
+ hmset 10003 username testuser3 password E10ADC3949BA59ABBE56E057F20F883E
+ hmset 10004 username testuser4 password E10ADC3949BA59ABBE56E057F20F883E
+ hmset 10005 username testuser5 password E10ADC3949BA59ABBE56E057F20F883E
+ 
+ rpush users 10001
+ rpush users 10002
+ rpush users 10003
+ rpush users 10004
+ rpush users 10005
+ 
+ zadd 10001F 1 10002
+ zadd 10001F 1 10003
+ zadd 10001F 1 10004
+ zadd 10001F 1 10005
+
+ zadd 10002F 1 10001
+ zadd 10002F 1 10003
+ zadd 10002F 1 10004
+ zadd 10002F 1 10005
+ 
+ zadd 10003F 1 10001
+ zadd 10003F 1 10002
+ zadd 10003F 1 10004
+ zadd 10003F 1 10005
+ 
+ zadd 10004F 1 10001
+ zadd 10004F 1 10002
+ zadd 10004F 1 10003
+ zadd 10004F 1 10005
+ 
+ zadd 10005F 1 10001
+ zadd 10005F 1 10002
+ zadd 10005F 1 10003
+ zadd 10005F 1 10004

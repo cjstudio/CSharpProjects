@@ -1,0 +1,4 @@
+﻿
+用户基本信息 hash hset 用户ID
+所有用户 List rpush users
+用户好友列表 SORTEDSET（有序集合） "F"+用户ID
